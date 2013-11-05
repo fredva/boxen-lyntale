@@ -11,18 +11,39 @@
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'MenschBold';
+  src: url('../../fonts/mensch-bold-webfont.ttf'),
+       url('../../fonts/mensch-bold-webfont.eot'),
+       url('../../fonts/mensch-bold-webfont.woff'),
+       url('../../fonts/mensch-bold-webfont.svg'); 
+}
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
+
+html {
+  background-image: url("../../img/cardboard_@2X.png");
+  background-size: 600px 600px; 
+}
+
 body {
-  background: #f7f2d3;
-  background: -moz-radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, white), color-stop(100%, #f7f2d3));
-  background: -webkit-radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
-  background: -o-radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
-  background: -ms-radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
-  background: radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
-  background-color: #f7f3de; }
+  //background: #f7f2d3;
+  //background: -moz-radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
+  //background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, white), color-stop(100%, #f7f2d3));
+  //background: -webkit-radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
+  //background: -o-radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
+  //background: -ms-radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
+  //background: radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
+  //background-color: #f7f3de; 
+  background-image: -webkit-gradient(circle cover, from(rgba(123, 89, 61, 0.38)), to(rgba(116, 81, 50, 0.6) 100%));
+  background-image: -webkit-radial-gradient(circle cover, rgba(123, 89, 61, 0.38), rgba(116, 81, 50, 0.6) 100%);
+  background-image: -moz-radial-gradient(circle cover, rgba(123, 89, 61, 0.38), rgba(116, 81, 50, 0.6) 100%);
+  background-image: -ms-linear-gradient(circle cover, rgba(123, 89, 61, 0.38), rgba(116, 81, 50, 0.6) 100%);
+  background-image: -o-linear-gradient(circle cover, rgba(123, 89, 61, 0.38), rgba(116, 81, 50, 0.6) 100%);
+
+}
 
 .reveal {
   font-family: "Lato", sans-serif;
@@ -47,7 +68,8 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #333333;
-  font-family: "League Gothic", Impact, sans-serif;
+  //font-family: "League Gothic", Impact, sans-serif;
+  font-family: 'MenschBold', Impact, sans-serif;
   line-height: 0.9em;
   letter-spacing: 0.02em;
   //text-transform: uppercase;
@@ -82,7 +104,7 @@ body {
  *********************************************/
 .reveal section img {
   margin: 15px 0px;
-  background: rgba(255, 255, 255, 0.12);
+  //background: rgba(255, 255, 255, 0.12);
   //border: 4px solid #333333;
   //box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   -webkit-transition: all .2s linear;
